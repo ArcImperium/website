@@ -4,26 +4,15 @@
     flex-direction: row;
     height: 15%;
     width: 90%;
-    top: 0;
+    top: var(--head-pos);
     left: 5%;
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
     background-color: midnightblue;
-}
 
-.not-head {
-    position: fixed;
-    height: 2.5%;
-    width: 90%;
-    top: 0;
-    left: 5%;
-
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-    background-color: midnightblue;
+    transition: top 1.5s ease;
 }
 
 .head-button {
