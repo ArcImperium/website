@@ -1,0 +1,65 @@
+.head {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 90%;
+    top: 0;
+    left: 5%;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: midnightblue;
+}
+
+.not-head {
+    position: fixed;
+    height: 2.5%;
+    width: 90%;
+    top: 0;
+    left: 5%;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: midnightblue;
+}
+
+.head-button {
+    position: absolute;
+    height: 60%;
+    width: 25%;
+    top: 20%;
+
+    background-color: white;
+    border-color: transparent;
+    border-radius: 15px;
+    color: darkslateblue;
+    font-size: 25px;
+}
+.head-button.a {
+    left: calc(25% / 4);
+}
+.head-button.b {
+    left: calc(6 * 25% / 4);
+}
+.head-button.c {
+    left: calc(11 * 25% / 4);
+}
+
+.close-head {
+    position: fixed;
+    width: 2.5%;
+    aspect-ratio: 1/1;
+
+    background-color: midnightblue;
+    border-radius: 50%;
+    border-color: transparent;
+}
+.close-head.a {
+    left: 1.5%;
+}
+.close-head.b {
+    right: 1.5%;
+}
