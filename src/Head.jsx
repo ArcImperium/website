@@ -1,7 +1,9 @@
 import './Head.css'
 import {useState} from "react"
+import {useNavigate} from "react-router-dom"
 
 function Head({head, setHead}) {
+    const nav = useNavigate()
     const [headPos, setHeadPos] = useState(0)
 
     function moveHeadUp() {
@@ -16,9 +18,9 @@ function Head({head, setHead}) {
     return(
         <>
         <div className="head" style={{'--head-pos': `${headPos}%`}}>
-            <button className="head-button a">Home</button>
-            <button className="head-button b">Blog</button>
-            <button className="head-button c">About</button>
+            <button className="head-button a" onClick={() => {nav('/')}}>Home</button>
+            <button className="head-button b" onClick={() => {nav('/blog')}}>Blog</button>
+            <button className="head-button c" onClick={() => {nav('/about')}}>About</button>
         </div>
         {head && (<>
         <button className="close-head a" onClick={() => {moveHeadUp()}}></button>
