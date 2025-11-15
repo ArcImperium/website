@@ -1,0 +1,14 @@
+.post-container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+
+.post {
+    position: absolute;
+    width: calc(100% / 3);
+    aspect-ratio: 3/2;
+
+    background-color: darkslateblue;
+}
