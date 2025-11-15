@@ -23,12 +23,12 @@ function Head({head, setHead}) {
             <button className="head-button c" onClick={() => {nav('/about')}}>About</button>
         </div>
         {head && (<>
-        <button className="close-head a" onClick={() => {moveHeadUp()}}></button>
-        <button className="close-head b" onClick={() => {moveHeadUp()}}></button>
+        <button className="close-head a" onClick={() => {moveHeadUp()}}>↑</button>
+        <button className="close-head b" onClick={() => {moveHeadUp()}}>↑</button>
         </>)}
         {!head && (<>
-        <button className="close-head a" onClick={() => {moveHeadDown()}}></button>
-        <button className="close-head b" onClick={() => {moveHeadDown()}}></button>
+        <button className="close-head a" onClick={() => {moveHeadDown()}}>↓</button>
+        <button className="close-head b" onClick={() => {moveHeadDown()}}>↓</button>
         </>)}
         </>
     )

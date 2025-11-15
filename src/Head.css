@@ -13,6 +13,7 @@
     background-color: midnightblue;
 
     transition: top 1.5s ease;
+    z-index: 20;
 }
 
 .head-button {
@@ -45,6 +46,9 @@
     background-color: midnightblue;
     border-radius: 50%;
     border-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
 }
 .close-head.a {
     left: 1.5%;

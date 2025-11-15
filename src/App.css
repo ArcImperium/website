@@ -1,0 +1,42 @@
+html {
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: -100;
+}
+
+.info {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+
+    background-color: darkslateblue;
+    border-radius: 25px;
+    color: whitesmoke;
+}
+
+.heading {
+    font-size: 40px;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 30px;
+    padding-left: 25px;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 25px;
+}
