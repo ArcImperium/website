@@ -1,20 +1,22 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/users', (req, res) => {
-    userData = 
+router.get('/posts', (req, res) => {
+    const posts = 
     [
         {
-            "id": "1",
-            "num": "101"
+            "title": "A",
+            "date": "1",
+            "displaycontent": "a"
         },
         {
-            "id": "2",
-            "num": "102"
+            "title": "B",
+            "date": "2",
+            "displaycontent": "b"
         }
     ]
 
-    res.send(userData)
+    res.json(posts)
 })
 
 module.exports = router

@@ -1,14 +1,43 @@
-.post-container {
+.post-container1 {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 20%;
-    left: 10%;
-    width: 80%;
+    left: 7.5%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.post-container2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    right: 7.5%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
 }
 
 .post {
-    position: absolute;
-    width: calc(100% / 3);
-    aspect-ratio: 3/2;
+    width: 60%;
+    aspect-ratio: 2/3;
 
     background-color: darkslateblue;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+
+.post-title {
+    text-align: center;
+    font-size: 40px;
+}
+.post-date {
+    text-align: center;
+    font-size: 25px;
+}
+.post-content {
+    margin: 25px;
+    font-size: 20px;
 }
