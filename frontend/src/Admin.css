@@ -1,0 +1,82 @@
+.admin-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+
+    background-color: darkslateblue;
+    border-radius: 25px;
+    color: whitesmoke;
+}
+
+.admin-instruction {
+    font-size: 50px;
+    text-align: center;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: horizontal;
+}
+
+.input-pass {
+    width: 80%;
+    height: 50px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+    font-size: 25px;
+    padding-left: 25px;
+    border-color: transparent;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    color: midnightblue;
+}
+.input-pass.warn {
+    color: darkred;
+    font-weight: bold;
+}
+
+.show-pass {
+    transform: scale(2.5);
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+input[type="checkbox"] {
+    accent-color: midnightblue;
+}
+
+.check-pass {
+    width: 40%;
+    height: 50px;
+    margin-left: 30%;
+    margin-bottom: 5%;
+
+    border-radius: 15px;
+    background-color: whitesmoke;
+    border-color: transparent;
+    color: midnightblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.admin-option-container {
+    display: flex;
+    flex-direction: horizontal;
+}
+
+.admin-option {
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
+    margin-left: calc(100% / 9);
+    margin-bottom: 50px;
+
+    text-align: center;
+    background-color: darkslateblue;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

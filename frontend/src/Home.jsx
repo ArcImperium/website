@@ -1,4 +1,3 @@
-import './Home.css'
 import {useEffect} from "react"
 import Foot from './Foot.jsx'
 

@@ -1,6 +1,7 @@
 import './Blog.css'
 import {useParams} from "react-router-dom"
 import {useState, useEffect} from "react"
+import Foot from './Foot.jsx'
 
 function Post() {
     const [post, setPost] = useState(null)
@@ -20,10 +21,13 @@ function Post() {
 
     return(
         <>
-        <div className="info">
-            <h1 className="title">{post.title}</h1>
-            <h2 className="date">{post.date}</h2>
-            <p className="text">{post.content}</p>
+        <div className="everything-container">
+            <div className="info">
+                <h1 className="title">{post.title}</h1>
+                <h2 className="date">{post.date}</h2>
+                <p className="text">{post.content}</p>
+            </div>
+            <Foot/>
         </div>
         </>
     )

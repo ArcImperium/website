@@ -6,10 +6,13 @@ import Home from './Home.jsx'
 import Blog from './Blog.jsx'
 import Post from './Post.jsx'
 import About from './About.jsx'
+import Admin from './Admin.jsx'
 import Background from './assets/background.jpg'
 
 function App() {
   const [head, setHead] = useState(true)
+  const [admin, setAdmin] = useState(false)
+  const [pass, setPass] = useState("admin")
 
   return (
     <>
@@ -21,6 +24,7 @@ function App() {
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/blog/:id" element={<Post/>}/>
+        <Route path="/admin" element={<Admin admin={admin} setAdmin={setAdmin} pass={pass} setPass={setPass}/>}/>
       </Routes>
     </Router>
     </>

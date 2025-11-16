@@ -18,6 +18,7 @@ html::-webkit-scrollbar {
 .info {
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 5%;
 
     background-color: darkslateblue;
     border-radius: 25px;
@@ -27,16 +28,19 @@ html::-webkit-scrollbar {
 .heading {
     font-size: 40px;
     text-align: center;
+    color: whitesmoke;
 }
 
 .subheading {
     font-size: 30px;
     padding-left: 25px;
+    color: whitesmoke;
 }
 
 .text {
     font-size: 20px;
     padding-left: 25px;
+    color: whitesmoke;
 }
 
 .everything-container {
