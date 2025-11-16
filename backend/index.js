@@ -18,6 +18,4 @@ app.use(cors(corsOptions))
 app.use('/', router)
 
 const port = 4000
-const server = app.listen(port, () => {
-    console.log(`Server running: ${port}`)
-})
+const server = app.listen(port)

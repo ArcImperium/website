@@ -30,6 +30,7 @@
     border-radius: 15px;
     background-color: whitesmoke;
     color: midnightblue;
+    font-family: 'Trebuchet MS';
 }
 .input-pass.warn {
     color: darkred;
@@ -67,6 +68,9 @@ input[type="checkbox"] {
 .check-pass:hover {
     transform: scale(1.1);
 }
+.check-pass.loading {
+    background-color: slategray;
+}
 
 .admin-option-container {
     display: flex;
@@ -97,4 +101,23 @@ input[type="checkbox"] {
     border-radius: 5px;
     font-size: 15px;
     padding-left: 5px;
+
+    color: midnightblue;
+    font-family: 'Trebuchet MS';
+}
+
+.content-input {
+    width: 90%;
+    margin-left: 2.5%;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height: 250px;
+    line-height: 1.5;
+    resize: none;
+
+    color: midnightblue;
+    font-family: 'Trebuchet MS';
 }
