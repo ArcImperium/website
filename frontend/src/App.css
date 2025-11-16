@@ -16,10 +16,8 @@ html::-webkit-scrollbar {
 }
 
 .info {
-    position: absolute;
-    top: 20%;
-    left: 10%;
     width: 80%;
+    margin-left: 10%;
 
     background-color: darkslateblue;
     border-radius: 25px;
@@ -39,4 +37,14 @@ html::-webkit-scrollbar {
 .text {
     font-size: 20px;
     padding-left: 25px;
+}
+
+.everything-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-height: 100vh;
+    top: 20%;
+    left: 0;
+    width: 100%;
 }

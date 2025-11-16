@@ -1,0 +1,14 @@
+.foot {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+
+    background-color: midnightblue;
+    color: white;
+}
+
+.foot-text {
+    margin-left: 5%;
+    font-size: 25px;
+}

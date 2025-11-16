@@ -6,12 +6,10 @@ import Home from './Home.jsx'
 import Blog from './Blog.jsx'
 import Post from './Post.jsx'
 import About from './About.jsx'
-import Foot from './Foot.jsx'
 import Background from './assets/background.jpg'
 
 function App() {
   const [head, setHead] = useState(true)
-  const [foot, setFoot] = useState(false)
 
   return (
     <>
