@@ -5,14 +5,18 @@ router.get('/posts', (req, res) => {
     const posts = 
     [
         {
+            "id": "p0",
             "title": "A",
             "date": "1",
-            "displaycontent": "a"
+            "displaycontent": "a",
+            "content": "a"
         },
         {
+            "id": "p1",
             "title": "B",
             "date": "2",
-            "displaycontent": "b"
+            "displaycontent": "b",
+            "content": "b"
         }
     ]
 
