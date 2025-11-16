@@ -29,6 +29,7 @@ html::-webkit-scrollbar {
     font-size: 40px;
     text-align: center;
     color: whitesmoke;
+    text-decoration: underline;
 }
 
 .subheading {

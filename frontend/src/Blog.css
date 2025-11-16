@@ -27,11 +27,17 @@
     border-radius: 25px;
     margin-bottom: 50px;
     color: whitesmoke;
+
+    transition: transform 0.5s ease;
+}
+.post:hover {
+    transform: scale(1.05);
 }
 
 .post-title {
     text-align: center;
     font-size: 40px;
+    text-decoration:underline;
 }
 .post-date {
     text-align: center;
@@ -45,6 +51,7 @@
 .title {
     font-size: 50px;
     text-align: center;
+    text-decoration: underline;
 }
 .date {
     font-size: 20px;

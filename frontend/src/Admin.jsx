@@ -39,7 +39,16 @@ function Admin({admin, setAdmin, pass, SetPass}) {
                 </div>
             </>)}
             {createPost && (<>
-                
+                <div className="admin-container">
+                    <h2 className="subheading">Title</h2>
+                    <input className="post-input" type="text"/>
+                    <h2 className="subheading">Display Content</h2>
+                    <input className="post-input" type="text"/>
+                    <h2 className="subheading">Content</h2>
+                    <input className="post-input content" type="text"/>
+                    <div style={{height: "25px"}}></div>
+                    <button className="check-pass create">Post</button>
+                </div>
             </>)}
             <Foot/>
         </div>

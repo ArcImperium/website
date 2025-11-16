@@ -25,6 +25,15 @@ function About() {
                 <p className="text">Self-Taught<br/>
                 Python, Javascript, React, HTML/CSS</p>
             </div>
+            <div className="info">
+                <h1 className="heading">Contact</h1>
+                <h2 className="subheading">Email</h2>
+                <p className="text">elip271828@gmail.com</p>
+                <h2 className="subheading">Github</h2>
+                <p className="text">ArcImperium</p>
+                <h2 className="subheading">Slack</h2>
+                <p className="text">Eli Peters</p>
+            </div>
             <Foot/>
         </div>
         </>

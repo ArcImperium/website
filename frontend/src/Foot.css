@@ -20,4 +20,9 @@
     width: auto;
     top: 10%;
     right: 5%;
+
+    transition: transform 0.5s ease;
+}
+.icon:hover {
+    transform: scale(1.05);
 }
