@@ -1,7 +1,6 @@
 import './Blog.css'
 import {useEffect, useState} from "react"
 import {useNavigate} from "react-router-dom"
-import Foot from './Foot.jsx'
 
 function Blog() {
     const [posts, setPosts] = useState([])
