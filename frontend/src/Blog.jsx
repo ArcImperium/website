@@ -11,7 +11,7 @@ function Blog() {
     }, [])
 
     useEffect(() => {
-        fetch("http://localhost:4000/posts")
+        fetch("https://elipetersblog.onrender.com/posts")
             .then(res => res.json())
             .then(data => setPosts(data))
     }, [])

@@ -8,7 +8,7 @@ function Post() {
     const {id} = useParams()
 
     useEffect(() => {
-        fetch("http://localhost:4000/posts")
+        fetch("https://elipetersblog.onrender.com/posts")
             .then(res => res.json())
             .then(data => {const found = data.find(p => p.id === id); setPost(found)})
     }, [id])

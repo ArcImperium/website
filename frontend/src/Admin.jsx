@@ -39,7 +39,7 @@ function Admin({admin, setAdmin, pass, SetPass}) {
     }
 
     async function postNew() {
-        const res = await fetch("http://localhost:4000/posts", {
+        const res = await fetch("https://elipetersblog.onrender.com/posts", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
@@ -68,7 +68,7 @@ function Admin({admin, setAdmin, pass, SetPass}) {
     }
 
     async function deletePost(id) {
-        await fetch(`http://localhost:4000/posts/${id}`, {
+        await fetch(`https://elipetersblog.onrender.com/posts/${id}`, {
             method: "DELETE"
         })
         setPosts(prev => prev.filter(post => post.id !== id))

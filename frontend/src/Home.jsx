@@ -10,9 +10,15 @@ function Home() {
         <>
         <div className="everything-container">
             <div className="info">
-                <h1 className="heading">Heading</h1>
-                <h2 className="subheading">Subheading</h2>
-                <p className="text">Text</p>
+                <h1 className="heading">I code</h1>
+                <h2 className="subheading">Languages</h2>
+                <p className="text">Python<br/>
+                Javascript & HTML/CSS (React)</p>
+                <h2 className="subheading">Siege</h2>
+                <p className="text">It's been going well so far<br/>
+                Currently at 5 coins, base Framework, and Hollow Knight</p>
+                <h2 className="subheading">Organizer at Rat Hacks</h2>
+                <p className="text">Nathan's really cool</p>
             </div>
             <Foot/>
         </div>

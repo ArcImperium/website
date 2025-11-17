@@ -28,7 +28,8 @@ function About() {
             <div className="info">
                 <h1 className="heading">Contact</h1>
                 <h2 className="subheading">Email</h2>
-                <p className="text">elip271828@gmail.com</p>
+                <p className="text"><a href="elip271828@gmail.com">elip271828@gmail.com</a><br/>
+                <a href="eli@rathacks.com">eli@rathacks.com</a></p>
                 <h2 className="subheading">Github</h2>
                 <p className="text">ArcImperium</p>
                 <h2 className="subheading">Slack</h2>

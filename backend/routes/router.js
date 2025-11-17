@@ -25,6 +25,10 @@ router.post('/posts', (req, res) => {
 
     posts.push(newPost)
     fs.writeFileSync(postFile, JSON.stringify(posts, null, 2))
+
+    res.status(201).json({
+        post: newPost
+    })
 })
 
 router.delete('/posts/:id', (req, res) => {
