@@ -9,12 +9,15 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:false}))
 
 const corsOptions = {
-    origin: 'https://elipeters.org',
+    origin: [
+        'https://elipeters.org',
+        'https://www.elipeters.org'
+    ],
     credentials: true,
 }
 app.use(cors(corsOptions))
 
 app.use('/', router)
 
-const PORT = process.env.port
+const PORT = process.env.PORT || 4000
 const server = app.listen(PORT)
