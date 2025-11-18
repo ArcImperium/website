@@ -54,7 +54,7 @@ function Admin({admin, setAdmin, pass, SetPass}) {
         const givePosts = []
         for (let i = 0; i < posts.length; i++) {
             givePosts.push(
-                <div className="admin-post" key={posts[i].id} onClick={() => {nav(`/blog/${posts[i].id}`)}}>
+                <div className="admin-post" key={posts[i].id}>
                     <div className="admin-post-description">
                         <h1 className="post-title">{posts[i].title}</h1>
                         <h2 className="post-date">{posts[i].date}</h2>
