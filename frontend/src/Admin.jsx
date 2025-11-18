@@ -26,7 +26,7 @@ function Admin({admin, setAdmin, pass, SetPass}) {
 
     const [loading, setLoading] = useState(false)
 
-    const [posts, setPosts] = useState(null)
+    const [posts, setPosts] = useState([])
 
     function checkPass() {
         if (enterPass === pass) {
