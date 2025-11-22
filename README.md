@@ -1,3 +1,8 @@
+This is my personal website! There's not much (it was very code intensive), but it gets the job done. 
+There is a home page, an about page, a blog page, and a scret admin page.
+It is connected to a backend at https://elipetersblog.onrender.com/posts and all posts are displayed on the /blog page.
+On the admin page, you must enter the password, then you can choose to either add a post or edit posts (only for deleting them right now).
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
