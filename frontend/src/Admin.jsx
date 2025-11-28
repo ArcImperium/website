@@ -78,8 +78,8 @@ function Admin({admin, setAdmin, pass, SetPass}) {
         <>
         <div className="everything-container">
             {(!admin && !createPost && !editPost) && (<>
-                <div className="admin-container">
-                        <h1 className="admin-instruction">Enter Admin Key:</h1>
+                <div className="admin-container p-10">
+                        <h1 className="admin-instruction mb-5">Enter Admin Key:</h1>
                         <div className="password-container">
                             {!showWarning && (<input className="input-pass" type={showPass ? "text" : "password"} value={enterPass} onChange={(e) => {setEnterPass(e.target.value)}}/>)}
                             {showWarning && (<input className="input-pass warn" type="text" value={"Incorrect"}/>)}
@@ -97,12 +97,12 @@ function Admin({admin, setAdmin, pass, SetPass}) {
             {(createPost && !editPost) && (<>
                 <div className="admin-container">
                     <button className="check-pass back" onClick={() => {setCreatePost(false); setEditPost(false)}}>BACK</button>
-                    <h2 className="subheading">Title</h2>
-                    <input className="post-input" type="text" value={title} onChange={(e) => {setTitle(e.target.value)}}/>
-                    <h2 className="subheading">Display Content</h2>
-                    <input className="post-input" type="text" value={displaycontent} onChange={(e) => {setDisplaycontent(e.target.value)}}/>
-                    <h2 className="subheading">Content</h2>
-                    <textarea className="content-input" type="text" value={content} onChange={(e) => {setContent(e.target.value); e.target.style.height = "auto"; e.target.style.height = `${e.target.scrollHeight}px `}}/>
+                    <h2 className="subheading mb-1.5 mt-1.5">Title</h2>
+                    <input className="post-input bg-white p-2 text-shadow-blue-950" type="text" value={title} onChange={(e) => {setTitle(e.target.value)}}/>
+                    <h2 className="subheading mb-1.5 mt-1.5">Display Content</h2>
+                    <input className="post-input bg-white p-2 text-shadow-blue-950" type="text" value={displaycontent} onChange={(e) => {setDisplaycontent(e.target.value)}}/>
+                    <h2 className="subheading mb-1.5 mt-1.5">Content</h2>
+                    <textarea className="content-input bg-white p-2 text-shadow-blue-950" type="text" value={content} onChange={(e) => {setContent(e.target.value); e.target.style.height = "auto"; e.target.style.height = `${e.target.scrollHeight}px `}}/>
                     <div style={{height: "25px"}}></div>
                     {!loading && (<button className="check-pass create" onClick={() => {postNew(); setLoading(true); setTimeout(() => {setTitle(""); setDisplaycontent(""); setContent(""); setLoading(false)}, 1000)}}>Post</button>)}
                     {loading && (<button className="check-pass create loading">Post</button>)}

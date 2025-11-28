@@ -8,7 +8,7 @@ function Foot() {
 
     return(
         <>
-        <div className="foot">
+        <div className="foot p-4 z-1000">
             <h1 className="foot-text">©{new Date().getFullYear()} Eli Peters</h1>
             <img src={SpaceShip} className="icon" onClick={() => {nav('/admin')}}/>
         </div>
