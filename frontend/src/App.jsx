@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import './App.css'
+import NotFound from './NotFound.jsx'
 import Head from './Head.jsx'
 import Home from './Home.jsx'
 import Blog from './Blog.jsx'
@@ -17,14 +18,29 @@ function App() {
   return (
     <>
     <Router>
-      <Head head={head} setHead={setHead}/>
       <img className="container" src={Background}/>
       <Routes>
-        <Route path ="/" element={<Home/>}/>
-        <Route path="/blog" element={<Blog/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/blog/:id" element={<Post/>}/>
-        <Route path="/admin" element={<Admin admin={admin} setAdmin={setAdmin} pass={pass} setPass={setPass}/>}/>
+        <Route path="*" element={<NotFound />} />
+        <Route path ="/" element={<>
+          <Head head={head} setHead={setHead}/>
+          <Home/>
+        </>}/>
+        <Route path="/blog" element={<>
+          <Head head={head} setHead={setHead}/>
+          <Blog/>
+        </>}/>
+        <Route path="/about" element={<>
+          <Head head={head} setHead={setHead}/>
+          <About/>
+        </>}/>
+        <Route path="/blog/:id" element={<>
+          <Head head={head} setHead={setHead}/>
+          <Post/>
+        </>}/>
+        <Route path="/admin" element={<>
+          <Head head={head} setHead={setHead}/>
+          <Admin admin={admin} setAdmin={setAdmin} pass={pass} setPass={setPass}/>
+        </>}/>
       </Routes>
     </Router>
     </>
