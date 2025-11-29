@@ -51,12 +51,18 @@ function Admin({admin, setAdmin, pass, SetPass}) {
     }
 
     function getAdminPosts() {
-        const givePosts = []
+        const givePosts = [<div className="admin-post">
+                    <div className="admin-post-description">
+                        <h1 className="post-title p-4">Really long title Test</h1>
+                        <h2 className="post-date">1234</h2>
+                    </div>
+                    <button className="delete-button">X</button>
+                </div>]
         for (let i = 0; i < posts.length; i++) {
             givePosts.push(
                 <div className="admin-post" key={posts[i].id}>
                     <div className="admin-post-description">
-                        <h1 className="post-title">{posts[i].title}</h1>
+                        <h1 className="post-title p-4">{posts[i].title}</h1>
                         <h2 className="post-date">{posts[i].date}</h2>
                     </div>
                     <button className="delete-button" onClick={() => {deletePost(posts[i].id)}}>X</button>

@@ -24,7 +24,7 @@ function App() {
       <img className="container" src={Background}/>
       <img src={IcePlanet1} className="fixed top-[-10%] left-0"/>
       <img src={SpaceIce} className="fixed bottom-[-50%] right-[-20%]"/>
-      <img src={Snow} className="fixed w-[100%] left-0 top-0"/>
+      <img src={Snow} className="fixed w-full left-0 top-0"/>
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path ="/" element={<>

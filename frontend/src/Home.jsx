@@ -55,12 +55,12 @@ function Home() {
                     <div className="flex-1 flex h-full w-160 items-center content-center">
                         {(statArray[stat] === "a") && (<img className={`w-200 h-50`} src="https://github-readme-stats.hackclub.dev/api/wakatime?username=3035&api_domain=hackatime.hackclub.com&theme=prussian&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8"/>)}
                         {(statArray[stat] === "b") && (<div className={`w-200 h-50`}>
-                            <h1 className="w-full text-4xl text-center mt-3">Chess.com</h1>
-                            <h1 className="w-full text-xl text-center mt-3">Rapid: {chessData.chess_rapid.last.rating}</h1>
-                            <h1 className="w-full text-xl text-center mt-1">Blitz: {chessData.chess_blitz.last.rating}</h1>
-                            <h1 className="w-full text-xl text-center mt-1">Bullet: {chessData.chess_bullet.last.rating}</h1>
+                            <h1 className="w-full text-4xl text-center text-neutral-800 mt-4 [-webkit-text-stroke:1px_green]">Chess.com</h1>
+                            <h1 className="w-full text-xl text-center text-neutral-800 mt-4 [-webkit-text-stroke:0.25px_red]">Rapid: {chessData.chess_rapid.last.rating}</h1>
+                            <h1 className="w-full text-xl text-center text-neutral-800 mt-1 [-webkit-text-stroke:0.25px_red]">Blitz: {chessData.chess_blitz.last.rating}</h1>
+                            <h1 className="w-full text-xl text-center text-neutral-800 mt-1 [-webkit-text-stroke:0.25px_red]">Bullet: {chessData.chess_bullet.last.rating}</h1>
                         </div>)}
-                        {(statArray[stat] === "c") && (<div className={`w-200 h-50`}></div>)}
+                        {(statArray[stat] === "c") && (<img className={`w-200 h-50`} src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ArcImperium&theme=prussian"/>)}
                     </div>
                     <button onClick={() => {nextStat("+")}} className="h-full right-0 w-15 bg-stone-400 text-gray-800 text-5xl opacity-50 rounded-tr-2xl rounded-br-2xl hover:opacity-100 transition duration-250 ease">{">"}</button>
                 </div>
