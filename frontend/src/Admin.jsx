@@ -51,13 +51,7 @@ function Admin({admin, setAdmin, pass, SetPass}) {
     }
 
     function getAdminPosts() {
-        const givePosts = [<div className="admin-post">
-                    <div className="admin-post-description">
-                        <h1 className="post-title p-4">Really long title Test</h1>
-                        <h2 className="post-date">1234</h2>
-                    </div>
-                    <button className="delete-button">X</button>
-                </div>]
+        const givePosts = []
         for (let i = 0; i < posts.length; i++) {
             givePosts.push(
                 <div className="admin-post" key={posts[i].id}>
@@ -78,6 +72,64 @@ function Admin({admin, setAdmin, pass, SetPass}) {
             method: "DELETE"
         })
         setPosts(prev => prev.filter(post => post.id !== id))
+    }
+
+    async function download() {
+        try {
+            const res = await fetch("https://elipetersblog.onrender.com/backup")
+            if (!res.ok) {throw new Error("It didn't work")}
+            
+            const blob = await res.blob()
+            const url = window.URL.createObjectURL(blob)
+            const a = document.createElement("a")
+
+            a.href = url
+            a.download = "backup_posts.json"
+            a.click()
+
+            window.URL.revokeObjectURL(url)
+        }
+        catch (err) {
+            console.error("Download failed: ", err)
+            alert("Download failed")
+        }
+    }
+    async function upload() {
+        const input = document.createElement("input")
+        input.type = "file"
+        input.accept = "application/json"
+
+        input.onchange = async (e) => {
+            const file = e.target.files[0]
+            if(!file) {return}
+
+            const formData = new FormData()
+            formData.append("file", file)
+
+            try {
+                const res = await fetch("https://elipetersblog.onrender.com/restore", {
+                    method: "POST",
+                    body: formData
+                })
+
+                const data = await res.json()
+                if (data.success) {
+                    alert("Upload sccessful")
+
+                    const updatedPosts = await fetch("https://elipetersblog.onrender.com/posts").then(r => r.json())
+                    setPosts(updatedPosts)
+                }
+                else {
+                    alert("Upload failed")
+                }
+            }
+            catch (err) {
+                console.error("Upload failed: ", err)
+                alert("Upload failed")
+            }
+        }
+
+        input.click()
     }
 
     return(
@@ -116,7 +168,11 @@ function Admin({admin, setAdmin, pass, SetPass}) {
             </>)}
             {(editPost && !createPost) && (<>
                 <div className="admin-container">
-                    <button className="check-pass back" onClick={() => {setCreatePost(false); setEditPost(false)}}>BACK</button>
+                    <div className="flex flex-row">
+                        <button className="w-[20%] h-12.5 bg-white ml-[5%] mt-10 mb-10 rounded-xl text-indigo-900 font-bold text-2xl hover:scale-110 transition-transform duration-500 ease" onClick={() => {download()}}>DOWNLOAD</button>
+                        <button className="w-[40%] h-12.5 bg-white ml-[5%] mt-10 mb-10 rounded-xl text-indigo-900 font-bold text-2xl hover:scale-110 transition-transform duration-500 ease" onClick={() => {setCreatePost(false); setEditPost(false)}}>BACK</button>
+                        <button className="w-[20%] h-12.5 bg-white ml-[5%] mt-10 mb-10 rounded-xl text-indigo-900 font-bold text-2xl hover:scale-110 transition-transform duration-500 ease" onClick={() => {upload()}}>UPLOAD</button>
+                    </div>
                     <div className="admin-display">
                         {getAdminPosts()}
                     </div>
