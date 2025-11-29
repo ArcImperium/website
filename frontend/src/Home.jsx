@@ -1,10 +1,32 @@
-import {useEffect} from "react"
+import {useEffect, useState} from "react"
 import Foot from './Foot.jsx'
 
 function Home() {
     useEffect(() => {
         document.title="Home"
     }, [])
+
+    const [stat, setStat] = useState(0)
+    const statArray = ["a", "b", "c"]
+
+    function nextStat(sign) {
+        if (sign === "+") {
+            if (stat === (statArray.length - 1)) {
+                setStat(0)
+            }
+            else {
+                setStat(prev => prev + 1)
+            }
+        }
+        else if (sign === "-") {
+            if (stat === 0) {
+                setStat(statArray.length - 1)
+            }
+            else {
+                setStat(prev => prev - 1)
+            }
+        }
+    }
 
     return(
         <>
@@ -19,6 +41,18 @@ function Home() {
                 Currently at 5 coins, base Framework, and Hollow Knight</p>
                 <h2 className="subheading mt-2.5">Organizer at Rat Hacks</h2>
                 <p className="text">Nathan's really cool</p>
+            </div>
+            <div className="info p-5">
+                <h1 className="heading">Stats</h1>
+                <div className="flex flex-row h-50 w-[80%] bg-white text-black ml-[10%] m-10 rounded-2xl">
+                    <button onClick={() => {nextStat("-")}} className="h-full left-0 w-15 bg-stone-400  text-gray-800 text-5xl opacity-50 rounded-tl-2xl rounded-bl-2xl hover:opacity-100 transition duration-250 ease">{"<"}</button>
+                    <div className="flex-1 flex h-full w-160 items-center content-center">
+                        {(statArray[stat] === "a") && (<img className="w-200 h-50" src="https://github-readme-stats.hackclub.dev/api/wakatime?username=3035&api_domain=hackatime.hackclub.com&theme=prussian&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8"/>)}
+                        {(statArray[stat] === "b") && (<>b</>)}
+                        {(statArray[stat] === "c") && (<>c</>)}
+                    </div>
+                    <button onClick={() => {nextStat("+")}} className="h-full right-0 w-15 bg-stone-400 text-gray-800 text-5xl opacity-50 rounded-tr-2xl rounded-br-2xl hover:opacity-100 transition duration-250 ease">{">"}</button>
+                </div>
             </div>
             <Foot/>
         </div>

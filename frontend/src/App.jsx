@@ -11,6 +11,7 @@ import Admin from './Admin.jsx'
 import Background from './assets/background.jpg'
 import IcePlanet1 from './assets/ice-planet.png'
 import SpaceIce from './assets/space-ice.png'
+import Snow from './assets/Snow_gif_slow.gif'
 
 function App() {
   const [head, setHead] = useState(true)
@@ -23,6 +24,7 @@ function App() {
       <img className="container" src={Background}/>
       <img src={IcePlanet1} className="fixed top-[-10%] left-0"/>
       <img src={SpaceIce} className="fixed bottom-[-50%] right-[-20%]"/>
+      <img src={Snow} className="fixed w-[100%] left-0 top-0"/>
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path ="/" element={<>
