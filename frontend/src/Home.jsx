@@ -4,6 +4,7 @@ import Python from './assets/python.png'
 import Javascript from './assets/javascript.png'
 import React from './assets/react.png'
 import Tailwind from './assets/tailwind.png'
+import Git from './assets/git.png'
 
 function Home() {
     useEffect(() => {
@@ -82,6 +83,10 @@ function Home() {
         }
     }
 
+    function newTab(web) {
+        window.open(web, '_blank', 'noopener,noreferrer')
+    }
+
     return(
         <>
         <div className="everything-container">
@@ -150,25 +155,65 @@ function Home() {
                     <button onClick={() => {nextPro("-")}} className="h-full left-0 w-15 bg-stone-400  text-gray-800 text-5xl opacity-50 rounded-tl-2xl rounded-bl-2xl hover:opacity-100 transition duration-250 ease">{"<"}</button>  
                     <div className="flex-1 flex h-full w-160 items-center content-center">
                         {(proArray[pro] === "a") && (<div className="w-200 h-50 flex flex-row justify-center">
-                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Slider Game</h1>
-                            <h1 className="[-webkit-text-stroke:0.25px_red]">
-
-                            </h1>
+                            <div className="flex h-full w-[50%]">
+                                <div onClick={() => newTab("https://github.com/ArcImperium/Slider-Game")} className="flex h-full w-full items-center justify-center">
+                                    <img src={Git} className="max-h-[90%] max-w-full object-contain hover:cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                                </div>
+                            </div>
+                            <div className="flex flex-col h-full w-[50%] p-2">
+                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Slider Game</h1>
+                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                    This is an 8-puzzle game made with Python using the library PyQt5.
+                                    Import an image file, and then it will split it in 9 pieces and shuffled.
+                                    You can only move one piece at a time to put the picture back together.
+                                </h1>
+                            </div>
                         </div>)}
                         {(proArray[pro] === "b") && (<div className="w-200 h-50 flex flex-row justify-center">
-                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Best Breakfast</h1>
-                            <h1 className="[-webkit-text-stroke:0.25px_red]">
-                            </h1>
+                            <div className="flex items-center justify-center h-full w-[50%]">
+                                <div onClick={() => newTab("https://github.com/ArcImperium/siege1-1")} className="flex h-full w-full items-center justify-center">
+                                    <img src={Git} className="max-h-[90%] max-w-full object-contain hover:cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                                </div>
+                            </div>
+                            <div className="flex flex-col h-full w-[50%] p-2">
+                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Best Breakfast</h1>
+                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                    This is my first attempt at web development.
+                                    It includes some of the basics of Javascript and HTML/CSS.
+                                    Just choose your favorite breakfast or take the test to find out.
+                                </h1>
+                            </div>
                         </div>)}
                         {(proArray[pro] === "c") && (<div className="w-200 h-50 flex flex-row justify-center">
-                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">AristoCards</h1>
-                            <h1 className="[-webkit-text-stroke:0.25px_red]">
-                            </h1>
+                            <div className="flex items-center justify-center h-full w-[50%]">
+                                <div onClick={() => newTab("https://github.com/ArcImperium/aristocards")} className="flex h-full w-full items-center justify-center">
+                                    <img src={Git} className="max-h-[90%] max-w-full object-contain hover:cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                                </div>
+                            </div>
+                            <div className="flex flex-col h-full w-[50%] p-2">
+                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">AristoCards</h1>
+                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                    This was my first web game made with React, so there are a lot of bugs.
+                                    Bet a coin amount, then pay blackjack.
+                                    Deal, Hit, Stand, and Change Bet options are available.
+                                    It really is addicting to gamble.
+                                </h1>
+                            </div>
                         </div>)}
                         {(proArray[pro] === "d") && (<div className="w-200 h-50 flex flex-row justify-center">
-                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Website</h1>
-                            <h1 className="[-webkit-text-stroke:0.25px_red]">
-                            </h1>
+                            <div className="flex items-center justify-center h-full w-[50%]">
+                                <div onClick={() => newTab("https://github.com/ArcImperium/website")} className="flex h-full w-full items-center justify-center">
+                                    <img src={Git} className="max-h-[90%] max-w-full object-contain hover:cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out"/>
+                                </div>
+                            </div>
+                            <div className="flex flex-col h-full w-[50%] p-2">
+                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Website</h1>
+                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                    This is my personal website, and it shows my capabliities as a web developer.
+                                    In fact, this is the same website that you are on right now.
+                                    This website is one of my favorite coding projects.
+                                </h1>
+                            </div>
                         </div>)}
                     </div>   
                     <button onClick={() => {nextPro("+")}} className="h-full right-0 w-15 bg-stone-400 text-gray-800 text-5xl opacity-50 rounded-tr-2xl rounded-br-2xl hover:opacity-100 transition duration-250 ease">{">"}</button>

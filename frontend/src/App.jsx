@@ -22,8 +22,8 @@ function App() {
   function getIce() {
     const giveIce = []
 
-    for (let i = 0; i < 10; i++) {
-      const icy = 10 * i
+    for (let i = 0; i < 20; i++) {
+      const icy = 5 * i
       giveIce.push(<img src={Ice} className="fixed w-[10%] -top-2" style={{left: `${icy}%`}}/>)
     }
 
