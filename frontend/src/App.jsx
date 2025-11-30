@@ -12,11 +12,23 @@ import Background from './assets/background.jpg'
 import IcePlanet1 from './assets/ice-planet.png'
 import SpaceIce from './assets/space-ice.png'
 import Snow from './assets/Snow_gif_slow.gif'
+import Ice from './assets/icicle.png'
 
 function App() {
   const [head, setHead] = useState(true)
   const [admin, setAdmin] = useState(false)
   const [pass, setPass] = useState("admin")
+
+  function getIce() {
+    const giveIce = []
+
+    for (let i = 0; i < 10; i++) {
+      const icy = 10 * i
+      giveIce.push(<img src={Ice} className="fixed w-[10%] -top-2" style={{left: `${icy}%`}}/>)
+    }
+
+    return giveIce
+  }
 
   return (
     <>
@@ -25,6 +37,9 @@ function App() {
       <img src={IcePlanet1} className="fixed top-[-10%] left-0"/>
       <img src={SpaceIce} className="fixed bottom-[-50%] right-[-20%]"/>
       <img src={Snow} className="fixed w-full left-0 top-0"/>
+      <div className="">
+        {getIce()}
+      </div>
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path ="/" element={<>

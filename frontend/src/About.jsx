@@ -25,9 +25,9 @@ function About() {
             <div className="info p-5">
                 <h1 className="heading">Contact</h1>
                 <h2 className="subheading mt-2.5">Email</h2>
-                <p className="text"><a href="mailto:eli@rathacks.com">eli@rathacks.com</a></p>
+                <p className="text-[20px] pl-[25px] text-white underline"><a className="hover:text-neutral-300 transition-colors duration-250 ease-in-out" href="mailto:eli@rathacks.com">eli@rathacks.com</a></p>
                 <h2 className="subheading mt-2.5">Github</h2>
-                <p className="text">ArcImperium</p>
+                <p className="text-[20px] pl-[25px] text-white underline"><a className="hover:text-neutral-300 transition-colors duration-250 ease-in-out" href="https://github.com/arcimperium">ArcImperium</a></p>
                 <h2 className="subheading mt-2.5">Slack</h2>
                 <p className="text">@Eli Peters</p>
             </div>

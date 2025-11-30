@@ -17,6 +17,9 @@ function Home() {
     const [lang, setLang] = useState(0)
     const langArray = ["a", "b", "c", "d"]
 
+    const [pro, setPro] = useState(0)
+    const proArray = ["a", "b", "c", "d"]
+
     const [stat, setStat] = useState(0)
     const statArray = ["a", "b", "c", "d"]
 
@@ -37,6 +40,25 @@ function Home() {
             }
             else {
                 setLang(prev => prev - 1)
+            }
+        }
+    }
+
+    function nextPro(sign) {
+        if (sign === "+") {
+            if (pro === (proArray.length - 1)) {
+                setPro(0)
+            }
+            else {
+                setPro(prev => prev + 1)
+            }
+        }
+        else if (sign === "-") {
+            if (pro === 0) {
+                setPro(proArray.length - 1)
+            }
+            else {
+                setPro(prev => prev - 1)
             }
         }
     }
@@ -122,6 +144,34 @@ function Home() {
                         </div>)}
                     </div>
                     <button onClick={() => {nextLang("+")}} className="h-full right-0 w-15 bg-stone-400 text-gray-800 text-5xl opacity-50 rounded-tr-2xl rounded-br-2xl hover:opacity-100 transition duration-250 ease">{">"}</button>
+                </div>
+                <h2 className="subheading mt-2.5">Projects</h2>
+                <div className="flex flex-row h-50 w-[80%] bg-white text-black ml-[10%] m-10 rounded-2xl">
+                    <button onClick={() => {nextPro("-")}} className="h-full left-0 w-15 bg-stone-400  text-gray-800 text-5xl opacity-50 rounded-tl-2xl rounded-bl-2xl hover:opacity-100 transition duration-250 ease">{"<"}</button>  
+                    <div className="flex-1 flex h-full w-160 items-center content-center">
+                        {(proArray[pro] === "a") && (<div className="w-200 h-50 flex flex-row justify-center">
+                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Slider Game</h1>
+                            <h1 className="[-webkit-text-stroke:0.25px_red]">
+
+                            </h1>
+                        </div>)}
+                        {(proArray[pro] === "b") && (<div className="w-200 h-50 flex flex-row justify-center">
+                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Best Breakfast</h1>
+                            <h1 className="[-webkit-text-stroke:0.25px_red]">
+                            </h1>
+                        </div>)}
+                        {(proArray[pro] === "c") && (<div className="w-200 h-50 flex flex-row justify-center">
+                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">AristoCards</h1>
+                            <h1 className="[-webkit-text-stroke:0.25px_red]">
+                            </h1>
+                        </div>)}
+                        {(proArray[pro] === "d") && (<div className="w-200 h-50 flex flex-row justify-center">
+                            <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Website</h1>
+                            <h1 className="[-webkit-text-stroke:0.25px_red]">
+                            </h1>
+                        </div>)}
+                    </div>   
+                    <button onClick={() => {nextPro("+")}} className="h-full right-0 w-15 bg-stone-400 text-gray-800 text-5xl opacity-50 rounded-tr-2xl rounded-br-2xl hover:opacity-100 transition duration-250 ease">{">"}</button>
                 </div>
                 <h2 className="subheading mt-2.5">Siege</h2>
                 <p className="text">It's been going well so far<br/>
