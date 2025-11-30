@@ -101,8 +101,8 @@ function Home() {
                                 <img src={Python} className="max-h-[90%] max-w-full object-contain"/>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Python</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">Python</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     I was introduced to Python in 2023, but I started getting acquainted with the language in January 2025.
                                     I have worked with command line, PyQt5, and a little bit of StreamLit.
                                     I would say that my level is intermediate.
@@ -114,8 +114,8 @@ function Home() {
                                 <img src={Javascript} className="max-h-[90%] max-w-full object-contain"/>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Javascript</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">Javascript</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     I started programming in Javascript in September 2025.
                                     HTML and CSS come along with it, so I know them too.
                                     I would say that my level is beginner.
@@ -127,8 +127,8 @@ function Home() {
                                 <img src={React} className="max-h-[90%] max-w-full object-contain"/>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">React</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">React</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     I have only used React for my web projects, and I have used Vite for most of them.
                                     I would say that my level is beginner as well.
                                 </h1>
@@ -139,8 +139,8 @@ function Home() {
                                 <img src={Tailwind} className="max-h-[90%] max-w-full object-contain"/>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Tailwind</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">Tailwind</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     I started using Tailwind CSS in November 2025 (about a few days ago).
                                     I really like it, so much easier than switching between HTML and CSS.
                                     I would say that my level wis definitely beginner.
@@ -161,8 +161,8 @@ function Home() {
                                 </div>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Slider Game</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">Slider Game</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     This is an 8-puzzle game made with Python using the library PyQt5.
                                     Import an image file, and then it will split it in 9 pieces and shuffled.
                                     You can only move one piece at a time to put the picture back together.
@@ -176,8 +176,8 @@ function Home() {
                                 </div>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Best Breakfast</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">Best Breakfast</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     This is my first attempt at web development.
                                     It includes some of the basics of Javascript and HTML/CSS.
                                     Just choose your favorite breakfast or take the test to find out.
@@ -191,8 +191,8 @@ function Home() {
                                 </div>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">AristoCards</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">AristoCards</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     This was my first web game made with React, so there are a lot of bugs.
                                     Bet a coin amount, then pay blackjack.
                                     Deal, Hit, Stand, and Change Bet options are available.
@@ -207,8 +207,8 @@ function Home() {
                                 </div>
                             </div>
                             <div className="flex flex-col h-full w-[50%] p-2">
-                                <h1 className="font-bold text-xl mb-1 [-webkit-text-stroke:0.5px_green]">Website</h1>
-                                <h1 className="[-webkit-text-stroke:0.25px_red]">
+                                <h1 className="font-bold text-xl mb-1 text-neutral-800 [-webkit-text-stroke:0.5px_green]">Website</h1>
+                                <h1 className="text-neutral-800 [-webkit-text-stroke:0.25px_red]">
                                     This is my personal website, and it shows my capabliities as a web developer.
                                     In fact, this is the same website that you are on right now.
                                     This website is one of my favorite coding projects.
