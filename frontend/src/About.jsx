@@ -13,12 +13,14 @@ function About() {
                 <h1 className="heading">General Information</h1>
                 <h2 className="subheading mt-2.5">Name</h2>
                 <p className="text">Eli Peters</p>
+                <h2 className="subheading mt-2.5">Country</h2>
+                <p className="text">United States of America</p>
             </div>
             <div className="info p-5">
                 <h1 className="heading">Education</h1>
                 <h2 className="subheading mt-2.5">Code</h2>
                 <p className="text">Self-Taught<br/>
-                Python, Javascript, React, HTML/CSS</p>
+                Python, Javascript, React, HTML/CSS, Tailwind</p>
             </div>
             <div className="info p-5">
                 <h1 className="heading">Contact</h1>

@@ -22,7 +22,7 @@ function Post() {
     return(
         <>
         <div className="everything-container">
-            <div className="info">
+            <div className="info p-5">
                 <h1 className="title">{post.title}</h1>
                 <h2 className="date">{post.date}</h2>
                 <p className="text">{post.content}</p>
