@@ -1,7 +1,19 @@
+# OG
+
 This is my personal website! There's not much (it was very code intensive), but it gets the job done. 
 There is a home page, an about page, a blog page, and a scret admin page.
 It is connected to a backend at https://elipetersblog.onrender.com/posts and all posts are displayed on the /blog page.
 On the admin page, you must enter the password, then you can choose to either add a post or edit posts (only for deleting them right now).
+
+# Update
+
+All new code will be written in Tailwind CSS.
+There is now a 404 page that you will get redirected to if you input an incorrect url.
+There is a popup that will show up every time that you enter the website.
+On the home page, there are now revolving showcases for languages, projects, and stats.
+I also added an FAQ.
+Any link on the website will open up a new window when clicked on.
+On the admin side of things, I added a dowload and upload feature for the blog. This is only for instances that the posts are deleted, which is a real problem.
 
 # React + Vite
 
