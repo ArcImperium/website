@@ -218,10 +218,6 @@ function Home() {
                     </div>   
                     <button onClick={() => {nextPro("+")}} className="h-full right-0 w-15 bg-stone-400 text-gray-800 text-5xl opacity-50 rounded-tr-2xl rounded-br-2xl hover:opacity-100 transition duration-250 ease">{">"}</button>
                 </div>
-                <h2 className="subheading mt-2.5">Siege</h2>
-                <p className="text">It's been going well so far<br/>
-                Currently at 5 coins, base Framework, and Hollow Knight</p>
-                <h2 className="subheading mt-2.5">Organizer at Rat Hacks</h2>
                 <p className="text">Nathan's really cool</p>
             </div>
             <div className="info p-5">

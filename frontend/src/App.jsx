@@ -65,19 +65,19 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path ="/" element={<>
           <Head head={head} setHead={setHead}/>
-          <Home/>
+          <NotFound/>
         </>}/>
         <Route path="/blog" element={<>
           <Head head={head} setHead={setHead}/>
-          <Blog/>
+          <NotFound/>
         </>}/>
         <Route path="/about" element={<>
           <Head head={head} setHead={setHead}/>
-          <About/>
+          <NotFound/>
         </>}/>
         <Route path="/blog/:id" element={<>
           <Head head={head} setHead={setHead}/>
-          <Post/>
+          <NotFound/>
         </>}/>
         <Route path="/admin" element={<>
           <Head head={head} setHead={setHead}/>
